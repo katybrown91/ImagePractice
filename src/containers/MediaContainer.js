@@ -12,26 +12,43 @@ class MediaContainer extends React.Component{
     }
 
     leftButtonClickHandler(){
-        this.setState({
-            imageName: this.state.imageName - 1
-        })
-    }
+        if(this.state.index - 1 === -1){
+            this.setState({
+                index: this.state.imgList.length - 1
+            })
+        }
+            else {this.setState({
+                index: this.state.index-1
+            })}
+        }
+    
 
     rightButtonClickHandler = () => {
-        this.setState({
-            imageName: this.state.imageName + 1
-        })
+       if (this.state.index +1 ===this.state.imgList.length) {
+           this.setState({
+               index:0
+           }) 
+        }else{
+               this.setState({
+                   index: this.state.index +1
+               })
+               }
     }
+           
+       
+
+    
 
     render(){
         return(
             <div>
-                <Image name = {this.state.imageName}/>
+               
                 <MyButton name={'Left'} handler={this.leftButtonClickHandler.bind(this)}/>
                 <MyButton name={'Right'} handler={this.rightButtonClickHandler}/>
             </div>
         )
     }
 }
+
 
 export default MediaContainer
