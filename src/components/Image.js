@@ -21,7 +21,9 @@ class Image extends React.Component {
 
     render(){
         return (
-            <div style={{border:'2px solid black', height:'400px', width: '50%', marginLeft:'auto', marginRight:'auto'}}>{this.props.name}</div>
+            <div style={{border:'2px solid black', height:'400px', width: '50%', marginLeft:'auto', marginRight:'auto'}}>{this.props.name}
+            <button onClick={this.leftButtonClickHandler }>Back</button>
+        <button onClick={this.rightButtonClickHandler }>Forward</button></div>
         )
     }
 }

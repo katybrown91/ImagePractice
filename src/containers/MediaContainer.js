@@ -6,9 +6,6 @@ class MediaContainer extends React.Component{
     constructor(props){
         super(props)
 
-        this.state = {
-            imageName: 1
-        }
     }
 
     leftButtonClickHandler(){
@@ -44,7 +41,7 @@ class MediaContainer extends React.Component{
             <div>
                
                 <MyButton name={'Left'} handler={this.leftButtonClickHandler.bind(this)}/>
-                <MyButton name={'Right'} handler={this.rightButtonClickHandler}/>
+                {/*<MyButton name={'Right'} handler={this.rightButtonClickHandler}/> */}
             </div>
         )
     }
