@@ -15,7 +15,8 @@ class Image extends React.Component {
         this.state = {
             index: 0,
             imgList: [img0, img1, img2]
-        }
+            
+        } 
     }
 
     render(){
