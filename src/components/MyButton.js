@@ -43,6 +43,7 @@ class MyButton extends React.Component{
         return(
             <div>
              <img src = {this.state.imgList[this.state.index]} alt="pic" width="300px" />
+             <br></br>
         <button onClick={this.leftButtonClickHandler }>Back</button>
         <button onClick={this.rightButtonClickHandler }>Forward</button>
         </div>

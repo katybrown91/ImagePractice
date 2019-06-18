@@ -2,11 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -17,6 +13,18 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.media{
+  background-color: rgb(109, 109, 199);
+}
+
+button{
+  background-color: teal;
+  color: white;
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .App-link {

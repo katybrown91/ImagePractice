@@ -7,7 +7,10 @@ class Title extends React.Component{
 
     render(){
         return (
-            <h1>Title</h1>
+            <div>
+            <h1>My Images</h1>
+            <p>Click the buttons to look through the images</p>
+         </div>
         )
     }
 }

@@ -38,7 +38,7 @@ class MediaContainer extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className="media">
                
                 <MyButton name={'Left'} handler={this.leftButtonClickHandler.bind(this)}/>
                 {/*<MyButton name={'Right'} handler={this.rightButtonClickHandler}/> */}
